@@ -1,0 +1,42 @@
+
+public class Meat extends Stock {
+
+	public String type;
+	public int kg;
+
+	public Meat() {
+		super();
+		String type = "";
+		int kg = 0;
+
+	}
+
+	public Meat(String type, int kg) {
+		super();
+		this.type = type;
+		this.kg = kg;
+	}
+
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
+
+	public int getKg() {
+		return kg;
+	}
+
+	public void setKg(int kg) {
+		this.kg = kg;
+	}
+	
+	public void sayMeat(){
+		System.out.println("Your type of meat is " + this.type);
+		System.out.println("The kg of your choise meat is: " + this.kg + "kg! ");
+	}
+	
+
+}

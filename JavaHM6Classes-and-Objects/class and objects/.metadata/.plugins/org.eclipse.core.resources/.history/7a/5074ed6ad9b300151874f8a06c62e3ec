@@ -1,0 +1,47 @@
+
+public class Employee {
+	
+	private int hoursPerMonth;
+	private double Salary;
+	
+	public Employee(){
+		this.hoursPerMonth=0;
+		this.Salary=0;
+	}
+	
+	
+	public Employee(int hoursPerMonth, double salary) {
+		this.hoursPerMonth = hoursPerMonth;
+		Salary = salary;
+	}
+
+
+	public int getHoursPerMonth() {
+		return hoursPerMonth;
+	}
+
+
+	public void setHoursPerMonth(int hoursPerMonth) {
+		this.hoursPerMonth = hoursPerMonth;
+	}
+
+
+	public double getSalary() {
+		return Salary;
+	}
+
+
+	public void setSalary(double salary) {
+		Salary = salary;
+	}
+	
+	public void sayHours(){
+		System.out.println("I have worked %d hours this month " + this.hoursPerMonth);
+	}
+	public void saySalary(){
+		System.out.println("My salary this month is : " + this.Salary);
+	}
+	
+	
+
+}

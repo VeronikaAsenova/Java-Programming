@@ -1,0 +1,25 @@
+
+public class Automobile extends Car {
+
+	private int FuelConsumption;
+	
+	public Automobile(){
+		super();
+		this.FuelConsumption=0;
+	}
+	
+	public Automobile (float price, int FuelConsumption){
+		super(price);
+		this.FuelConsumption=FuelConsumption;
+	}
+	public int getFuelConsumption(){
+		return FuelConsumption;
+	}
+	public void setFuelConsumption() {
+		this.FuelConsumption=FuelConsumption;
+	}
+	
+	public String Automobile() {
+		return " [Consumtion: " + FuelConsumption + "]";
+	}
+}

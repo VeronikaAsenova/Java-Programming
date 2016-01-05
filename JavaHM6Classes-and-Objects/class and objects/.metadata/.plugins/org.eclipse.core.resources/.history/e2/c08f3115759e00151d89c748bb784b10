@@ -1,0 +1,23 @@
+
+public class Car {
+
+	private float price;
+
+	public Car() {
+		this.price = 0;
+	}
+
+	public Car(float price) {
+		this.price = price;
+	}
+	 
+	public  float getprice(){
+		return price;
+	}
+	public void setprice(float price){
+		this.price=price;
+	}
+	
+	
+
+}

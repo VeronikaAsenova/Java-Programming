@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;TA&apos; to &apos;Meat&apos;&#x0D;&#x0A;- Original project: &apos;Task03&apos;&#x0D;&#x0A;- Original element: &apos;TA&apos;&#x0D;&#x0A;- Renamed element: &apos;Meat&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;TA&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{TA.java[TA" matchStrategy="1" name="Meat" qualified="false" references="true" similarDeclarations="false" stamp="1450464559231" textual="false" version="1.0"/>
+</session>

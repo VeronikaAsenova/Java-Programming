@@ -1,0 +1,7 @@
+INDEX VERSION 1.127+C:\Users\Veronica\Desktop\eclipse-work files\class and objects\.metadata\.plugins\org.eclipse.jdt.core
+774078768.index
+399127799.index
+2189443787.index
+3116462414.index
+4220924405.index
+1679821019.index

@@ -1,0 +1,23 @@
+
+public class SUV extends Car {
+
+	
+	private boolean offroad;
+	
+	public SUV(float price, boolean offroad){
+		super (price);
+		this.offroad=offroad;
+	}
+	public void setoffroad(boolean offroad){
+		this.offroad=offroad;
+	}
+	public boolean isOffroad(){
+		return offroad;}
+	
+	
+		public String road() {
+			return "SUV [Price: " + getprice() + "] [Offroad: " + (offroad ? "Yes" : "No") + "]";
+		}
+	
+
+}

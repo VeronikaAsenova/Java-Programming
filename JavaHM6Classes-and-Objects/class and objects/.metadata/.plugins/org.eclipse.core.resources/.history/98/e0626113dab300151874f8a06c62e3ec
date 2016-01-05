@@ -1,0 +1,22 @@
+
+public class Test {
+
+	public static void main(String[] args) {
+
+		Employee Vladi = new Employee (160, 1800);
+		Doctor Veri =new Doctor (14,40);
+		Policeman Riko= new Policeman("Sheriff");
+		
+		Vladi.sayHours();
+		Vladi.saySalary();
+	System.out.println();
+	
+	Veri.sayDays();
+	Veri.sayNights();
+	System.out.println();
+	
+	Riko.sayRang();
+	
+	}
+
+}

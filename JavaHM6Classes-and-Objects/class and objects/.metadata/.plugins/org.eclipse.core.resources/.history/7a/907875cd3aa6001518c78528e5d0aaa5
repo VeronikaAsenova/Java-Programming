@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class test {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		Meat yourMeat = new Meat();
+		yourMeat.sayMeat();
+		yourMeat.sayType();
+		System.out.println();
+		
+		Stock isAvaiable = new Stock();
+		isAvaiable.sayisAvaiable();
+	}
+
+}
