@@ -1,0 +1,8 @@
+package LottaryGame;
+
+public class WrittingFiles {
+
+	public void writingPlayerInfo();
+	
+	
+}

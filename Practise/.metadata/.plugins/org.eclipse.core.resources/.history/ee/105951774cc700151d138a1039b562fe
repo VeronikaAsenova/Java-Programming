@@ -1,0 +1,48 @@
+package LottaryGame;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
+
+public class WrittingFiles {
+
+	public void writingPlayerInfo(String path, ArrayList<PlayerInfo> list) throws IOException{
+		FileWriter fileWriter= new FileWriter(path, true);
+		BufferedWriter writer= new BufferedWriter(fileWriter);
+		
+		for (int i = 0; i < list.size(); i++) {
+			writer.write(arg0);
+			writer.newLine();
+		}
+		
+		System.out.println("The saving of winners is succesful! ");
+		writer.close();
+	}
+	
+	public void writingWinningNumbers(String path,int[] winningNumbers) throws IOException{
+		FileWriter fileWriter= new FileWriter(path, true);
+		BufferedWriter writer= new BufferedWriter(fileWriter);
+		
+		for (int i = 0; i < winningNumbers.length; i++) {
+			writer.write(arg0);
+			writer.newLine();
+		}
+		
+		System.out.println("The saving of winning number is successful!");
+		writer.close();
+	}
+	
+	
+	public void writingTheWinners(String path,HashMap<Long, Integer>result ) throws IOException{
+		FileWriter fileWriter= new FileWriter(path, true);
+		BufferedWriter writer= new BufferedWriter(fileWriter);
+		
+	}
+	
+	
+	
+	
+	
+}

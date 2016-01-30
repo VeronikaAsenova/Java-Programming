@@ -1,0 +1,24 @@
+package LottaryGame;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.ArrayList;
+
+public class WrittingFiles {
+
+	public void writingPlayerInfo(String path, ArrayList<PlayerInfo> list) throws IOException{
+		FileWriter fileWriter= new FileWriter(path, true);
+		BufferedWriter writer= new BufferedWriter(fileWriter);
+		
+		for (int i = 0; i < list.size(); i++) {
+			writer.write(arg0);
+			writer.newLine();
+		}
+		
+		System.out.println("The saving of winners is succesful! ");
+		
+	}
+	
+	
+}

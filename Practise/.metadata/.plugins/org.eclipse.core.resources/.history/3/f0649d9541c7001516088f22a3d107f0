@@ -1,0 +1,29 @@
+package LottaryGame;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class ShowTheWinners {
+
+	public static void drawWinningNUmbers() {
+		System.out.println("works");
+	}
+	public static ArrayList<PlayerInfo> addPlyer() {
+		ArrayList<PlayerInfo>  list = new ArrayList<PlayerInfo>();
+		Scanner input=new Scanner(System.in);
+		System.out.println("Please enter your EGN: ");
+		long ID =input.nextLong();
+		int[] userNumbers = new int [5];
+		for (int i = 0; i < userNumbers.length; i++) {
+			System.out.println("Enter numbers: ");
+			userNumbers[i] = input.nextInt();
+		}
+		PlayerInfo player= new PlayerInfo(ID,userNumbers);
+		list.add(player);
+		return list;
+	}
+	public static void showWiners() {
+		System.out.println("works good");
+	}
+	
+}

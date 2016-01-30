@@ -1,0 +1,53 @@
+package LottaryGame;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Menu {
+	
+	static String answer;
+	public static void menu() throws IOException{
+		ArrayList<PlayerInfo> list= new ArrayList<PlayerInfo>();
+	do{
+		System.out.println("Menu:");
+		System.out.println("1.Add person.");
+		System.out.println("2.Draw the winning numbers.");
+		System.out.println("3.Show the winers.");
+		System.out.println("4.Exit.");
+		
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter option:");
+		int choise = sc.nextInt();
+		sc.nextLine();
+		switch (choise) {
+		case 1:
+			 list.add( ShowTheWinners.addPlyer());
+			 for (PlayerInfo playerInfo : list) {
+				System.out.println(playerInfo);
+			}
+			break;
+		case 2:
+			int[] a = ShowTheWinners.drawWinningNUmbers();
+			for (int i : a) {
+				System.out.print(i + " , ");
+			}
+			break;
+		case 3:
+			ShowTheWinners.showWiners();
+			break;
+		case 4:
+			System.exit(0);
+			break;
+
+		default:
+			System.out.println("Invalid option.");
+			break;
+		}
+		System.out.println("Do you want to continue(Y/N)?");
+		answer = sc.nextLine();
+		}while(answer.equalsIgnoreCase("Y"));
+	
+
+}}
