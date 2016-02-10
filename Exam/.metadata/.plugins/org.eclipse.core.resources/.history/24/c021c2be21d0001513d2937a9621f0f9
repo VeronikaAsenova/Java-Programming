@@ -1,0 +1,51 @@
+import java.util.Scanner;
+
+public class Matrix {
+
+	private int LengthOfMatrix;
+	private int[][] matrix = new int[LengthOfMatrix][LengthOfMatrix];
+	
+
+	public Matrix() {
+		super();
+	}
+	
+
+	public int getLengthOfMatrix() {
+		return LengthOfMatrix;
+	}
+
+	
+	public void setLengthOfMatrix(int lengthOfMatrix) {
+		if (LengthOfMatrix < 2 && LengthOfMatrix > 9) {
+		}
+		LengthOfMatrix = lengthOfMatrix;
+	}
+
+	
+	public int[][] getMatrix() {
+		return matrix;
+	}
+	
+
+	public void setMatrix(int[][] matrix) {
+
+		this.matrix = matrix;
+	}
+      
+	public int[][] fillMatrix (int LengthOfMatrix ){
+		
+		Scanner input=new Scanner(System.in);
+		int rows=LengthOfMatrix;
+		int cols=LengthOfMatrix;
+		int[][] matrix=new int [rows][cols];
+		
+		for (int row = 0; row < matrix.length; row++) {
+			for (int col = 0; col < matrix.length; col++) {
+				matrix[row][col]=input.nextInt();
+			}
+		}input.close();
+		
+		return matrix;}
+	
+}

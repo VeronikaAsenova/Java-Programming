@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+
+		Scanner input=new Scanner(System.in);
+		
+		
+		System.out.println("Please enter a length of your matrix: ");
+		int LengthOfMatrix=input.nextInt();
+		int rows=LengthOfMatrix;
+		int cols=LengthOfMatrix;
+		
+		
+		System.out.println("Fill the Matrix: ");
+		Matrix matrix=new Matrix(LengthOfMatrix);
+		int[][] arr = matrix.fillMatrix(LengthOfMatrix);
+	}
+
+}

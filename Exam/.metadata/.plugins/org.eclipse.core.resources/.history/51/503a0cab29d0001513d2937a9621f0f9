@@ -1,0 +1,51 @@
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Test {
+	static String answer;
+
+	public static void main(String[] args) throws IOException {
+
+		Scanner input = new Scanner(System.in);
+
+		System.out.println("Please enter a length of your matrix: ");
+		int LengthOfMatrix = input.nextInt();
+		int rows = LengthOfMatrix;
+		int cols = LengthOfMatrix;
+
+		System.out.println("Fill the Matrix: ");
+		Matrix matrix = new Matrix(LengthOfMatrix);
+		int[][] arr = matrix.fillMatrix(LengthOfMatrix);
+		System.out.println("Your matrix is look like: " + arr.toString());
+
+		String answer;
+		do
+
+		{
+			System.out.println("Choose how you want to continue: ");
+			System.out.println("1.Save array in file.");
+			System.out.println("2.Search the max number in array.");
+
+			Scanner sc = new Scanner(System.in);
+			System.out.println("Enter option:");
+			int choise = input.nextInt();
+			sc.nextLine();
+			switch (choise) {
+			case 1:
+				WrittingFiles.WrittinThaArray("File.txt", matrix);
+				break;
+			case 2:
+
+			default:
+				System.out.println("Invalid option!");
+				break;
+			}
+
+			System.out.println("Do you want to continue(Y/N)?");
+			answer = input.nextLine();
+		}
+
+		while (answer.equalsIgnoreCase("Y"));
+input.close();
+	}
+}
