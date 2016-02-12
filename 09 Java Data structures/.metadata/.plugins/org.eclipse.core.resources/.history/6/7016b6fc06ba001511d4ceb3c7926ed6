@@ -1,0 +1,35 @@
+import java.util.Scanner;
+import java.util.Set;
+import java.util.TreeMap;
+
+public class tas3 {
+
+	public static void main(String[] args) {
+		System.out.println("Enter text:");
+		Scanner sc = new Scanner(System.in);
+		String text = sc.nextLine();
+		
+		TreeMap<String, Integer> counter = new TreeMap<String, Integer>();
+		String[] words = text.split(" ");
+		
+		for (String word : words) {
+			Integer count = counter.get(word);
+			if(count == null){
+				count = 0;
+			}
+			counter.put(word,count + 1 );				
+		}
+		
+		Set<String> wordKey = counter.keySet();
+		
+		for (String word : wordKey) {
+			int value = counter.get(word);
+			if(value == 1){
+				System.out.println(word);
+			}
+		}
+		sc.close();
+	}
+	}
+
+}

@@ -1,0 +1,20 @@
+package TextManipulations;
+
+import java.util.Scanner;
+
+public class Task02 {
+
+	public static void main(String[] args) {
+		
+			Scanner input = new Scanner(System.in);
+			String word = input.nextLine();
+			reverse(word);
+		}
+		public static void reverse(String word){
+			String reversed = new StringBuffer(word).reverse().toString();
+			System.out.println(reversed);
+		}
+	
+	
+
+}

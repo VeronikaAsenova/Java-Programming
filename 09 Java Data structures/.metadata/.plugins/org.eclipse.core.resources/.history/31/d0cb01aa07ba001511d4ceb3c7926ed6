@@ -1,0 +1,35 @@
+import java.util.Scanner;
+import java.util.Set;
+import java.util.TreeMap;
+
+public class Task02 {
+
+	public static void main(String[] args) {
+
+		Scanner input = new Scanner(System.in);
+		System.out.println("Please enter text: ");
+		String text = input.nextLine();
+		
+
+		TreeMap<String, Integer> counter = new TreeMap<String, Integer>();
+		String[] strArr = text.split(" ");
+		
+		
+		for (String str : strArr) {
+			Integer count = counter.get(strArr);
+			if (count == null) {
+				count=0;
+			}
+			counter.put(str, count + 1);
+
+		}
+		Set<String> strKey = counter.keySet();
+
+		for (String string : strKey) {
+			int value = counter.get(strArr);
+			if (value == 1) {
+				System.out.println(strArr);
+			}
+		}
+	}
+}

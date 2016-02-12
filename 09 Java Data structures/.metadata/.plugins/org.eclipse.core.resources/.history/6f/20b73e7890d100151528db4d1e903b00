@@ -1,0 +1,66 @@
+package Student;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+
+public class Student {
+	private String firstName;
+	private String lastName;
+	private int age;
+	private int numInClass;
+	
+	private static HashMap<String, ArrayList<Double>> grades = new HashMap<String, ArrayList<Double>>();
+
+	public Student() {
+		super();
+	}
+
+	public Student(String firstName, String secondName, int age, int numInClass) {
+		super();
+		firstName = firstName;
+		lastName = secondName;
+		this.age = age;
+		numInClass = numInClass;
+	}
+
+	
+	
+	public Student(String firstName, String lastName, int age, int numInClass) {
+		super();
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.age = age;
+		this.numInClass = numInClass;
+	}
+
+	@Override
+	public String toString() {
+		return "Name: " + this.lastName + " " + this.lastName + " | number: " + this.numInClass + " | gades: " + grades;
+	}
+	
+	public void addSubjectMark(String Subject, double mark) {
+		if (grades.containsKey(Subject)) {
+			grades.get(Subject).add(mark);
+		}
+	}
+
+	public static double calculateAverageMark(String Subject) {
+		double average = 0;
+		double all = 0;
+		int count = 0;
+		ArrayList<Double> gradesOnSubj = grades.get(Subject);
+		if (grades.containsKey(Subject)) {
+			while (count != gradesOnSubj.size()) {
+				all += gradesOnSubj.get(count);
+				count++;
+			}
+			average = all / gradesOnSubj.size();
+		}
+		return average;
+
+	}
+	
+	
+	
+	
+}

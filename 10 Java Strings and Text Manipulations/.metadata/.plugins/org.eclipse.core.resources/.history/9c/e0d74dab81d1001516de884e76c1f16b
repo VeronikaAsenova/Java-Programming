@@ -1,0 +1,10 @@
+package TextManipulations;
+
+public class Task04WordConsider {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
